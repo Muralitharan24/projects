@@ -1,0 +1,15 @@
+.check-box{
+    width: 17px;
+    height: 17px;
+    border: 2px solid #5f6368;;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.check-box:hover{
+    border:2px solid black
+}
+.mycolor{
+    background-image: url(../../../../Images/check.png);
+    background-size: cover;
+    background-color: lightgreen;
+}

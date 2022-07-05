@@ -1,0 +1,4 @@
+<div class="menu-listdv" *ngFor = "let val of demo.menuArr" [ngClass] = "{'test1' : val.content == var1,'test2': val.content == var2 }" (click) = "mytest(val.content)" [routerLink] = "val.content">
+    <div class = "list-icon" [ngStyle] = "{'background-image' : val.image}" [ngClass] = "{'test1' : val.content == var1}"></div>
+    <div class = "list-content">{{val.content}}</div>
+</div>

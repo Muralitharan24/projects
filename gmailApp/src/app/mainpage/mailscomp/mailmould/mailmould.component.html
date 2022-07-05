@@ -1,0 +1,25 @@
+<div class="mail-container" (mouseenter) = "showHover()" (mouseleave) = "hideHover()">
+    <div class="dot-icon">
+        <span class="material-symbols-outlined cover">drag_indicator</span>
+    </div>
+    <div class="checkbox">
+        <app-checkbox></app-checkbox>
+    </div>
+    <div class="star-dv" (click) = "starredvalue(i)">
+        <span class="material-symbols-outlined cover1" [ngClass] = "{'color': iscolor}" (click) = "starColoruring()">grade</span>
+    </div>
+    <div class="dispatch-dv">{{myval.dispatcher}}</div>
+    <div class="mail-description">
+        <span id="span1">{{ myval.descpHead }}</span>
+        <span id="span2" maxlength = "20">{{ myval.descpContent}}</span>
+    </div>
+    <div class="dispatch-date" *appShowif = "showDate">
+        <div class="mail-date">{{myval.date}}</div>
+    </div>
+    <div class="deletebox" *appShowif = "showDelete">
+        <div class="delete-btn" (click) = "clearvalue(i)">
+            <span class="material-symbols-outlined dlt-icon">delete</span>
+        </div>
+    </div>
+</div>
+

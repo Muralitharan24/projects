@@ -1,0 +1,107 @@
+<div class="container">
+  <div class="header">
+    <div class="logo-container">
+      <div class="menu-icon" (click)="displaying()">
+        <span class="material-symbols-outlined">menu</span>
+      </div>
+      <div class="App-logo"></div>
+    </div>
+    <div class="input-container">
+      <div class="input-subcontainer">
+        <div class="search-icon">
+          <span class="material-symbols-outlined">search</span>
+        </div>
+        <input type="text" id="iput" placeholder="Search" autocomplete="off">
+        <div class="search-option">
+          <span class="material-symbols-outlined" id="tune">tune</span>
+        </div>
+      </div>
+      <div class="doubleIcon-dv">
+        <div class="support-icon">
+          <span class="material-symbols-outlined">help</span>
+        </div>
+        <div class="setting-icon">
+          <span class="material-symbols-outlined">settings</span>
+        </div>
+      </div>
+    </div>
+    <div class="App-profile">
+      <div class="g-Apps">
+        <span class="material-symbols-outlined">apps</span>
+      </div>
+      <div class="profile"></div>
+    </div>
+  </div>
+  <div class="mainPage-container">
+    <div class="sideMenu-container" *appShowif="demo.isDisplay">
+      <div class="compose-new"  (click) = "createShow()">
+        <div class="Add-icon"></div>
+        <div class="compose-content">Compose</div>
+      </div>
+      <div class="menu-option">
+        <app-menuoption></app-menuoption>
+      </div>
+    </div>
+    <div class="sub-sidemenu" *appShowif="demo.isShown">
+      <div class="plus-icon"></div>
+      <div class="menuicon-container">
+        <div class="menuicon-dv" *ngFor="let myicon of demo.menuArr" [ngStyle]="{'background-image' : myicon.image}"
+          [ngClass]="{'setColor' : myicon.content == title}"></div>
+      </div>
+    </div>
+    <div class="subMain-container">
+      <app-mainpage id="app-mainPage"></app-mainpage>
+      <div class="main-rightdv">
+        <div class="rightdv-icons">
+          <div class="calendar-icon"></div>
+          <div class="gkeep-icon"></div>
+          <div class="Task-icon"></div>
+          <div class="contact-icon"></div>
+          <div class="dummy-dv"></div>
+          <div class="Add-dv">
+            <span class="material-symbols-outlined cover">add</span>
+          </div>
+        </div>
+        <div class="Add-dv">
+          <span class="material-symbols-outlined cover">chevron_right</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="new-messagedv" *appShowif= "display1">
+    <div class="messageDv-header">
+      <div class="newmessage-content">New Message</div>
+      <div class="close-dv"  (click)= "createHide(subject.value,desc.innerText)">
+        <span class="material-symbols-outlined cover2">close</span>
+      </div>
+    </div>
+    <div class="createmail-container">
+      <div class="mailTo-dv">
+        <div class="to-content">To</div>
+        <input type="email" id="mailTo-iput">
+        <div class="attach-option">
+          <div class="carbon-copy">Cc</div>
+          <div class="blind-carbon">Bcc</div>
+        </div>
+      </div>
+      <input type="text" id="subject-iput" placeholder="Subject" #subject>
+      <div class="mail-description" contenteditable="true" #desc></div>
+      <div class="messagedv-footer">
+        <div class="sentbutton-dv">
+          <div class="sent-button">Send</div>
+          <div class="sent-option">
+            <span class="material-symbols-outlined sent-arrow">arrow_drop_down</span>
+          </div>
+        </div>
+        <div class="delete-option">
+          <div class="delete-dv">
+            <span class="material-symbols-outlined footericon">more_vert</span>
+          </div>
+          <div class="option-dv">
+            <span class="material-symbols-outlined footericon">delete</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,4 @@
+<div class="delete-container">
+    <p *appShowif = "demo.findEmpty">Your trash is empty.</p>
+    <app-mailmould *ngFor = "let myval of demo.TrashArr" [findval] = "myval"></app-mailmould>
+</div>

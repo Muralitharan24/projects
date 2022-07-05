@@ -1,0 +1,9 @@
+<div class="mails-wholedv" >
+    <div class="sub-mainheader">
+        <div class="button-dv" *ngFor = "let def of demo.buttonArr" (click) = "test(def.text)" [routerLink] = "def.text">
+            <div class="buttonDv-icon" [ngStyle] = "{'background-image':def.image}" [ngClass] = "{'colouring': def.text == findColor ,'colouring2': def.text == findBlue,'colouring3': def.text == findGreen}"></div>
+            <div class="buttonDv-content" [ngClass] = "{'colouring': def.text == findColor ,'colouring2': def.text == findBlue,'colouring3': def.text == findGreen}">{{def.text}}</div>
+        </div>
+    </div>
+    <router-outlet></router-outlet>    
+</div>

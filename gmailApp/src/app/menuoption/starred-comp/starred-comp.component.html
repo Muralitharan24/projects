@@ -1,0 +1,4 @@
+<div class="starred-container">
+    <p *appShowif = "demo.staredpara">Your starred is empty.</p>
+    <app-mailmould *ngFor = "let myval of demo.starredArr" [findval] = "myval"></app-mailmould>
+</div>

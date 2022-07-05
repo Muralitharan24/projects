@@ -1,0 +1,1 @@
+<app-mailmould *ngFor = "let myval of demo.mailArr;index as i" [findval] = "myval" (delete) = "clearPrimary(i)" (starred) = "starPrimary(i)"></app-mailmould>

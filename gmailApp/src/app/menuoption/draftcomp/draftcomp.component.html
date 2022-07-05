@@ -1,0 +1,4 @@
+<div class="draft-container">
+    <p *appShowif = "demo.isempty">Your draft is empty.</p>
+    <app-mailmould *ngFor = "let myval of demo.draftArr" [findval] = "myval"></app-mailmould>
+</div>

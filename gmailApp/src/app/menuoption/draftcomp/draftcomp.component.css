@@ -1,0 +1,10 @@
+.draft-container{
+    width: 99%;
+    height: 100%;
+}
+p{
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 17px;
+    font-size: 17px;
+}

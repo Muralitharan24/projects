@@ -1,0 +1,114 @@
+.main-container{
+    height: 100%;
+}
+.main-header{
+    display: flex;
+    width: 99%;
+    height: 47px;
+    padding: 0px 12px;
+    justify-content: space-between;
+    box-shadow: inset 0 -1px 0 0 rgba(100,121,143,0.2);
+}
+.header-leftdv{
+    display: flex;
+    width: 134px;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.check-drop{
+    display: flex;
+    width:47px;
+    height: 100%;
+    align-items: center;
+}
+.check-dv{
+    display: flex;
+    width: 26px;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: #5f6368;
+}
+.arrow{
+    display: flex;
+    width: 18px;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding-top: 4px;
+    color: #5f6368;
+    cursor: pointer;
+}
+#drop-arrow{
+    font-size: 20px;
+}
+.refresh-more{
+    display: flex;
+    width: 80px;
+    height: 80%;
+    justify-content: space-between;
+}
+.refresh-dv,.more-dv,.left-navigation,.right-navigation{
+    display: flex;
+    width: 37px;
+    height: 37px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    color: #5f6368;
+    cursor: pointer;
+}
+.refresh-dv:hover,.more-dv:hover,.left-navigation:hover,
+.right-navigation:hover,.arrow:hover,.check-dv:hover,.keyboard:hover{
+    background-color: rgba(32,33,36,0.059);
+    color: black;
+}
+.nano{
+    font-size: 20px;
+}
+.header-rightdv{
+    display: flex;
+    width: auto;
+    height: 100%;
+    align-items: center;
+    padding-right: 10px;
+}
+.count-dv{
+    display: flex;
+    width: 82px;
+    height: 80%;
+    /* background-color: lightslategrey; */
+    font-family: sans-serif;
+    font-size: 13px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: #5f6368;
+    cursor: pointer;
+}
+.count-dv:hover{
+    background-color: #e5e5e5;
+}
+.navigation{
+    display: flex;
+    width: 75px;
+    height: 80%;
+}
+.keyboard{
+    display: flex;
+    width: 30px;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.mails-dv{
+    width: 100%;
+    height: 526px;   
+    overflow-x: hidden;
+    overflow-y: auto;
+}
