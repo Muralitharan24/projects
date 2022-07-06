@@ -1,0 +1,17 @@
+<div class="dialog-container" *ngIf = "createDir.showComp" (click) = "outClick()" >
+    <div class="dialog-dv" (click) = "$event.stopPropagation()">
+        <div class="dialog-position">
+            <div>
+                <label>Enter X value : </label>
+               <input type="number" class="iput" #iputVal>
+            </div>
+            <div>
+                <label>Enter Y values : </label>
+               <input type="number" class="iput" #iputVal2>
+            </div>
+        </div>
+        <div class="btnDv">
+            <button (click) = "creating(iputVal.value,iputVal2.value)">Create</button>
+        </div>
+    </div>
+</div>

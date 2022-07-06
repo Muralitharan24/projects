@@ -1,0 +1,6 @@
+<div class="displayer-Comp">
+    <div tabindex="0" class="trail" *ngFor = "let x of mount.positionArr;index as i" [ngClass] = "{'lighting':x.p1 == mount.correct}" (click)="demo(x.p1)" (keydown.delete) = "deletingEl(i)">
+        {{x | positionpipe}}
+        <button (click) = "erase(i)">Delete</button>
+    </div>
+</div>

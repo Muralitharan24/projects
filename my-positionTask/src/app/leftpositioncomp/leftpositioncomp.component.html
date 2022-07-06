@@ -1,0 +1,3 @@
+<div class="creater-Comp" (dblclick) = "Add($event)">
+    <div tabindex="0" class="tab" [ngStyle]="{'left':contain.p1,'top':contain.p2}" *ngFor = "let contain of direct.positionArr;index as e" [ngClass] = "{'decorate': contain.p1 ==direct.correct}" (click) = "highlight(contain.p1)" (keydown.delete) = "remove(e)" routerLink = "Tab/{{contain.p1}}"></div>
+</div>
