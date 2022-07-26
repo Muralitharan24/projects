@@ -1,3 +1,9 @@
+![mainpage](https://user-images.githubusercontent.com/84373616/180945727-d423ae45-0056-4555-9d22-49a9d2ba1706.png)
+![dialoguebox](https://user-images.githubusercontent.com/84373616/180945784-a830a808-04db-4542-8545-9dccdd496c8e.png)
+
+
+
+
 # MyPositionTask
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
