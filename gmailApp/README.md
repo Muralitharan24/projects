@@ -1,3 +1,10 @@
+![gmailPrimary](https://user-images.githubusercontent.com/84373616/180944989-252b59ee-3268-4f6b-a371-24bf548e477c.png)
+![gmailSocial](https://user-images.githubusercontent.com/84373616/180945022-de9fc739-6f58-46d0-8b22-c8ea9e528716.png)
+![newmessage](https://user-images.githubusercontent.com/84373616/180945210-1d3eb819-baef-42de-9899-82786c887df1.png)
+
+
+
+
 # GmailApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
