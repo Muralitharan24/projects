@@ -1,0 +1,57 @@
+.@{pre}-table{
+    &\:col{
+        th:nth-child(odd),td:nth-child(odd){
+            background-color:@grey-bg7;
+        }
+    }
+    &\:row{
+        tr:nth-child(even){
+            background-color:@grey-bg7;
+        }
+    }
+}
+
+:where(.@{pre}-table){
+    width:100%;
+    text-align:left;
+    border-collapse:collapse;
+    font-size:@z-font-s14;
+
+    th,td{
+        padding:15px;
+    }
+    td{
+        color:@grey-txt2;
+    
+        &:first-child{
+            color:@grey-txt0;
+            font-weight:@z-font-w500;
+        }
+    }
+    .@{pre}-detail{
+        display:flex;
+        gap:15px;
+
+        .@{pre}-meta-data{
+            .@{pre}-data-name{
+                color:@grey-txt0;
+            }
+            .@{pre}-mail-id{
+                display:block;
+                padding-top:5px;
+                color:@grey-txt2;
+            }
+        }
+    }
+    .@{pre}-status-container{
+        display:flex;
+        align-items:center;
+        gap:8px;
+
+        .@{pre}-status{
+            width:8px;
+            height:8px;
+        }
+    }
+}
+

@@ -1,0 +1,236 @@
+:where(.@{pre}-badge){
+    display:inline-flex;
+    align-items:center;
+    background-color:@grey-bg5;
+    padding:4px 10px;
+    border-radius:4px;
+    font-size:@z-font-s14;
+    font-weight:@z-font-w500;
+    border-color:@grey-bor2;
+    gap:6px;
+
+    &.@{z}-type\:warning{
+        &{
+            @yellow-l:92%;
+
+            background-color:@yellow-bg;
+        }
+        &{
+            @yellow-s:95%;
+            @yellow-l:62%;
+
+            border-color:@yellow-bor;
+        }
+        &{
+            @yellow-s:85%;
+            @yellow-l:31%;
+
+            color:@yellow-txt;
+        }
+        .@{pre}-badge\:status{
+            @yellow-s:95%;
+            @yellow-l:46%;
+
+            background-color:@yellow-bg;
+        }
+        .reset\:btn{
+            .@{z}-ico{
+                @yellow-s:95%;
+                @yellow-l:46%;
+    
+                stroke:@yellow-ico;
+            }
+            &:hover{
+                @yellow-l:83%;
+
+                background-color:@yellow-bg;
+
+                .@{z}-ico{
+                    @yellow-s:85%;
+                    @yellow-l:31%;
+        
+                    stroke:@yellow-ico;
+                }
+            }
+        }
+    }
+    &.@{z}-type\:error{
+        &{
+            @red-s:100%;
+            @red-l:96%;
+
+            background-color:@red-bg;
+
+        }
+        &{
+            @red-s:100%;
+            @red-l:84%;
+
+            border-color:@red-bor;
+        }
+        &{
+            @red-s:97%;
+            @red-l:37%;
+
+            color:@red-txt;
+        }
+        .@{pre}-badge\:status{
+            @red-s:90%;
+            @red-l:70%;
+
+            background-color:@red-bg;
+        }
+        .reset\:btn{
+            .@{z}-ico{
+                @red-s:90%;
+                @red-l:70%;
+    
+                stroke:@red-ico;
+            }
+            &:hover{
+                @red-s:100%;
+                @red-l:91%;
+
+                background-color:@red-bg;
+
+                .@{z}-ico{
+                    @red-s:97%;
+                    @red-l:37%;
+        
+                    stroke:@red-ico;
+                }
+            }
+        }
+    }
+    &.@{z}-type\:success{
+        &{
+            @green-s:89%;
+            @green-l:93%;
+
+            background-color:@green-bg;
+        }
+        &{
+            @green-s:100%;
+            @green-l:44%;
+
+            border-color:@green-bor;
+        }
+        &{
+            @green-s:97%;
+            @green-l:25%;
+
+            color:@green-txt;
+        }
+        .@{pre}-badge\:status{
+            @green-s:93%;
+            @green-l:46%;
+
+            background-color:@green-bg;
+        }
+        .reset\:btn{
+            .@{z}-ico{
+                @green-s:93%;
+                @green-l:46%;
+    
+                stroke:@green-ico;
+            }
+
+            &:hover{
+                @green-s:89%;
+                @green-l:83%;
+
+                background-color:@green-bg;
+
+                .@{z}-ico{
+                    @green-s:97%;
+                    @green-l:25%;
+        
+                    stroke:@green-ico;
+                }
+            }
+        }
+    }
+    &.@{z}-type\:info{
+        &{
+            @blue-s:89%;
+            @blue-l:95%;
+
+            background-color:@blue-bg;
+        }
+        &{
+            @blue-s:100%;
+            @blue-l:75%;
+
+            border-color:@blue-bor;
+        }
+        &{
+            @blue-s:97%;
+            @blue-l:45%;
+
+            color:@blue-txt;
+        }
+        .@{pre}-badge\:status{
+            @blue-s:93%;
+            @blue-l:67%;
+
+            background-color:@blue-bg;
+        }
+        .reset\:btn{
+            .@{z}-ico{
+                @blue-s:93%;
+                @blue-l:67%;
+    
+                stroke:@blue-ico;
+            }
+            &:hover{
+                @blue-s:89%;
+                @blue-l:88%;
+
+                background-color:@blue-bg;
+
+                .@{z}-ico{
+                    @blue-s:97%;
+                    @blue-l:45%;
+        
+                    stroke:@blue-ico;
+                }
+            }
+        }
+    }
+    &.@{pre}-size{
+        &\:small{
+            font-size:@z-font-s12;
+            padding:4px 10px;
+        }
+        &\:medium{
+            font-size:@z-font-s15;
+            padding: 5px 12px;
+
+        }
+        &\:large{
+            font-size:@z-font-s16;
+            padding: 6px 14px;
+        }
+    }
+    .reset\:btn{
+        border-radius:2px;
+
+        .@{z}-ico{
+            stroke-width:2;
+        }
+        &:hover{
+            background-color:@grey-bg4;
+
+            .@{z}-ico{
+                stroke:@grey-ico0;
+            }
+        }
+    }
+    :where(.@{pre}-badge\:status){
+        width: 6px;
+        height: 6px;
+        border-radius:100%;
+        background-color:@grey-bg2;
+    }
+}
+

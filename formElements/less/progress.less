@@ -1,0 +1,34 @@
+:where(.@{pre}-progress\:fg){
+    background-color:@grey-bg5;
+
+    .@{pre}-progress\:bg{
+        background-color:@accentcolor;
+    }
+    &.@{pre}-type\:line{
+        display:flex;
+        min-width:100px;
+        border-radius:10px;
+
+        .@{pre}-progress\:bg{
+            border-radius:10px;
+
+            .@{pre}-meta-data{
+                color:@white-txt1;
+                font-size:@z-font-s14;
+            }
+        }
+    }
+}
+:where(.@{pre}-progress-container){
+    .@{pre}-data-container{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        padding-bottom:10px;
+    
+        .@{pre}-meta-data{
+            font-weight:@z-font-w900;
+            color:@accentcolor;
+        }
+    }
+}

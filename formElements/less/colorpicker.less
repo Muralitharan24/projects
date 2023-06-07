@@ -1,0 +1,63 @@
+.@{pre}-colorpicker{
+    transform:scale(0.7);
+    transition:transform .2s linear;
+    background-color:@accentcolor;
+    border:none;
+
+    &:checked{
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white' %3E%3Cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3E%3C/svg%3E");
+        background-size:cover;
+        transform:scale(1.4);
+    }
+    &:hover{
+        transform:scale(1.4);
+    }
+    &:focus{
+        outline:none;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        border-radius: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        transform: scale(0);
+        background-color:@accentcolor;
+        opacity: 0.1;
+    }
+    &:checked::before{
+        animation:test 1s linear;
+    }
+    &.@{pre}-colorpicker{
+        &\:red{
+            background-color:@red-bg;
+
+            &::before{
+                background-color:@red-bg;
+            }
+        }
+        &\:green{
+            background-color:@green-bg;
+
+            &::before{
+                background-color:@green-bg;
+            }
+        }
+        &\:black{
+            background-color:@black-bg1;
+
+            &::before{
+                background-color:@black-bg1;
+            }
+        }
+        &\:grey{
+            background-color:@grey-bg2;
+
+            &::before{
+                background-color:@grey-bg2;
+            }
+        }
+    }
+}

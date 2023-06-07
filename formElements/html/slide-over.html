@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="zln-component">
+        <div class="zln-title z-font-s:18 z-font-w:500 z-mar-b:10">Slide over with form example</div>
+        <div class="z-dis:flex z-height[min]:700 z-height[max]:700 z-bor:1 z-bor-style:solid z-bor-c:grey5 z-bor-radius:5 z-overflow:hidden z-pos:re">
+            <div class="zln-slideover z-pos:left zln-show z-slider-w:500">
+                <div class="zln-header-container z-bor-b:1 z-bor-style:solid z-bor-c:grey5">
+                    <div class="zln-header">
+                        <div class="zln-title">New Project</div>
+                        <button class="reset:btn zln-item[hover]">
+                            <svg viewBox="0 0 24 24" class="z-ico o-ico-x-mark" width="22" height="22">
+                                <use xlink:href="#o-ico-x-mark"></use>
+                            </svg>
+                        </button> 
+                    </div>
+                    <span class="zln-description">Get started by filling in the information below to create your new project.</span>
+                </div>
+                <ul class="zln-slideover-body reset:ul z-list-gap:25">
+                    <li>
+                        <div class="zln-meta-title z-pad-b:12">Project name</div>
+                        <input type="text" size="30" class="z-input:text z-width[%]:100">
+                    </li>
+                    <li>
+                        <div class="zln-meta-title z-pad-b:12">Description</div>
+                        <textarea rows="5" class="zln-textarea z-type:default z-width[%]:100"></textarea>
+                    </li>
+                    <li>
+                        <div class="zln-meta-title z-pad-b:12">Team Members</div>
+                        <ul class="reset:ul z-dis:flex z-gap:10">
+                            <li>
+                                <img src="../images/profile1.jpg" alt="avatar" width="56" height="56" class="zln-rounded zln-rounded:32"/>
+                            </li>                                    
+                            <li>
+                                <img src="../images/profile2.jpg" alt="avatar" width="56" height="56" class="zln-rounded zln-rounded:32"/>
+                            </li>                                    
+                            <li>
+                                <img src="../images/profile3.jpg" alt="avatar" width="56" height="56" class="zln-rounded zln-rounded:32"/>
+                            </li>                                    
+                            <li>
+                                <img src="../images/profile4.jpeg" alt="avatar" width="56" height="56" class="zln-rounded zln-rounded:32"/>
+                            </li>                                    
+                            <li>
+                                <img src="../images/profile5.jpeg" alt="avatar" width="56" height="56" class="zln-rounded zln-rounded:32"/>
+                            </li>
+                            <li>
+                                <button class="reset:btn zln-rounded zln-rounded:32 z-bor:2 z-bor-style:dashed z-bor-c:grey4">
+                                    <svg viewBox="0 0 24 24" class="z-ico o-ico-plus" width="18" height="18">
+                                        <use xlink:href="#o-ico-plus"></use>
+                                    </svg>
+                                </button>
+                            </li>                                    
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="zln-meta-title">Privacy</div>
+                        <ul class="reset:ul z-pad[child]-lr:0 z-pad[child]-tb:15">
+                            <li>
+                                <label class="zln-select-option">
+                                    <input type="radio" name="privacy" class="z-input:radio" checked />
+                                    <span class="z-dis:flex-col">
+                                        <span class="zln-meta-title z-pad-b:5">Public access</span>
+                                        <span class="z-txt:grey2">Everyone with the link will see this project.</span>
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="zln-select-option">
+                                    <input type="radio" name="privacy" class="z-input:radio" />
+                                    <span class="z-dis:flex-col">
+                                        <span class="zln-meta-title z-pad-b:5">Private to project members</span>
+                                        <span class="z-txt:grey2">Only members of this project would be able to access.</span>
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="zln-select-option">
+                                    <input type="radio" name="privacy" class="z-input:radio" />
+                                    <span class="z-dis:flex-col">
+                                        <span class="zln-meta-title z-pad-b:5">Public access</span>
+                                        <span class="z-txt:grey2">Everyone with the link will see this project.</span>
+                                    </span>
+                                </label>
+                            </li>
+                        </ul>
+                        <div class="zln-copylink">
+                            <svg viewBox="0 0 24 24" class="z-ico o-ico-link" width="18" height="18">
+                                <use xlink:href="#o-ico-link"></use>
+                            </svg> 
+                            <span class="zln-data">Copy link</span>
+                        </div>
+                        <div class="zln-about">
+                            <svg viewBox="0 0 24 24" class="z-ico f-ico-question-mark-circle" width="18" height="18">
+                                <use xlink:href="#f-ico-question-mark-circle"></use>
+                            </svg> 
+                            <span class="zln-data">Learn more about sharing</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="zln-footer z-bor-t:1 z-bor-style:solid z-bor-c:grey5">
+                    <button class="z-btn z-btn:outline z-bor-c:grey4 z-txt:grey0 z-bg-hover:grey7">Cancel</button>
+                    <button class="z-btn">Create</button>
+                </div>
+            </div>
+            <div class="zln-contentpage z-flex:grow">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

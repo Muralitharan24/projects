@@ -1,0 +1,50 @@
+.@{pre}-popover-container{
+    position: relative;
+    width:max-content;
+    margin:auto;
+
+    .@{pre}-popover{
+        visibility:hidden;
+        position:absolute;
+        width:300px;
+        border:1px solid @grey-bor5;
+        background-color:@grey-bg10;
+        border-radius:5px;
+        transition:visibility .1s linear;
+        z-index:1;
+
+        .@{pre}-title{
+            font-size:@z-font-s15;
+            font-weight:@z-font-w700;
+        }
+        .@{pre}-meta-data{
+            display:block;
+        }
+        &.@{pre}-popover{
+            &\:top{
+                margin-bottom:10px;
+                bottom:100%;
+            }
+            &\:bottom{
+                margin-top:10px;
+                top:100%;
+            }
+            &\:left{
+                margin-right:10px;
+                right:100%;
+                top:0;
+            }
+            &\:right{
+                margin-left:10px;
+                left:100%;
+                top:0;
+            }
+        }
+    }
+    .@{z}-btn:hover ~ .@{pre}-popover{
+        visibility:visible;
+    }
+    .@{pre}-popover:hover{
+        visibility:visible;
+    }
+}

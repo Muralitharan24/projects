@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="reset:ul z-list-gap:25">
+        <li>
+            <div class="zln-title z-font-s:18 z-font-w:500">Simple toggle</div>
+            <div class="z-dis:flex z-bor:1 z-bor-style:solid z-bor-c:grey4 z-pad-tb:20 z-pad-lr:15 z-bor-radius:5 z-mar-t:10">
+                <label class="zln-toggle">
+                    <input type="checkbox">
+                    <span class="zln-toggle-state"></span>
+                    <span class="zln-toggle-btn"></span>
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="zln-title z-font-s:18 z-font-w:500">Short toggle</div>
+            <div class="z-dis:flex z-bor:1 z-bor-style:solid z-bor-c:grey4 z-pad-tb:20 z-pad-lr:15 z-bor-radius:5 z-mar-t:10">
+                <label class="zln-toggle zln-toggle:btn-s-b">
+                    <input type="checkbox">
+                    <span class="zln-toggle-state"></span>
+                    <span class="zln-toggle-btn"></span>
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="zln-title z-font-s:18 z-font-w:500">Toggle with icon</div>
+            <div class="z-dis:flex z-bor:1 z-bor-style:solid z-bor-c:grey4 z-pad-tb:20 z-pad-lr:15 z-bor-radius:5 z-mar-t:10">
+                <label class="zln-toggle zln-toggle:icon toggle-theme:success">
+                    <input type="checkbox">
+                    <span class="zln-toggle-state"></span>
+                    <span class="zln-toggle-btn"></span>
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="zln-title z-font-s:18 z-font-w:500">Toggle with left label and description</div>
+            <div class="z-dis:flex z-pad-tb:30 z-pad-lr:15 z-user-select:none z-mar-t:10">
+                <label class="z-dis:flex-al-c z-flex-j:sb z-cursor:poi z-gap:30">
+                    <span class="z-dis:flex-col">
+                        <span class="z-font-w:600 z-font-s:15">Available to hire</span>
+                        <span class="z-txt:grey2 z-font-s:15 z-mar-t:3">Nulla amet tempus sit accumsan. Aliquet turpis sed sit lacinia.</span>
+                    </span>
+                    <span class="zln-toggle">
+                        <input type="checkbox">
+                        <span class="zln-toggle-state"></span>
+                        <span class="zln-toggle-btn"></span>
+                    </span>
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="zln-title z-font-s:18 z-font-w:500">Toggle with right label</div>
+            <div class="z-dis:flex z-pad-tb:30 z-pad-lr:15 z-user-select:none z-mar-t:10">
+                <label class="z-dis:flex-al-c z-flex-j:sb z-cursor:poi z-gap:30">
+                    <span class="zln-toggle">
+                        <input type="checkbox">
+                        <span class="zln-toggle-state"></span>
+                        <span class="zln-toggle-btn"></span>
+                    </span>
+                    <span>
+                        <span class="z-font-w:600 z-font-s:14">Annual billing</span>
+                        <span class="z-txt:grey2 z-font-s:15">(Save 10%)</span>
+                    </span>
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="zln-title z-font-s:18 z-font-w:500">Disabled toggles</div>
+            <div class="z-pad-tb:30 z-pad-lr:15 z-user-select:none z-mar-t:10">
+                <label class="z-dis:flex z-flex-al:center z-cursor:poi z-gap:20 z-gap:30">
+                    <span class="zln-toggle">
+                        <input type="checkbox" disabled>
+                        <span class="zln-toggle-state"></span>
+                        <span class="zln-toggle-btn"></span>
+                    </span>
+                    <span class="z-txt:grey2 z-font-s:15">Disabled unchecked</span>
+                </label>
+                <label class="z-dis:flex z-flex-al:center z-cursor:poi z-mar-t:20 z-gap:20 z-gap:30">
+                    <span class="zln-toggle">
+                        <input type="checkbox" checked disabled>
+                        <span class="zln-toggle-state"></span>
+                        <span class="zln-toggle-btn"></span>
+                    </span>
+                    <span class="z-txt:grey2 z-font-s:15">Disabled checked</span>
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="zln-title z-font-s:18 z-font-w:500">Toggles with theme color</div>
+            <div class="z-pad-tb:30 z-pad-lr:15 z-user-select:none z-mar-t:10">
+                <label class="z-dis:flex z-flex-al:center z-cursor:poi z-gap:20 z-gap:30">
+                    <span class="zln-toggle">
+                        <input type="checkbox" checked>
+                        <span class="zln-toggle-state"></span>
+                        <span class="zln-toggle-btn"></span>
+                    </span>
+                    <span class="z-font-s:15">Default toggle theme</span>
+                </label>
+                <label class="z-dis:flex z-flex-al:center z-cursor:poi z-mar-t:20 z-gap:20 z-gap:30">
+                    <span class="zln-toggle toggle-theme:success">
+                        <input type="checkbox" checked>
+                        <span class="zln-toggle-state"></span>
+                        <span class="zln-toggle-btn"></span>
+                    </span>
+                    <span class="z-font-s:15">Success toggle theme</span>
+                </label>
+                <label class="z-dis:flex z-flex-al:center z-cursor:poi z-mar-t:20 z-gap:20 z-gap:30">
+                    <span class="zln-toggle toggle-theme:error">
+                        <input type="checkbox" checked>
+                        <span class="zln-toggle-state"></span>
+                        <span class="zln-toggle-btn"></span>
+                    </span>
+                    <span class="z-font-s:15">Failed toggle theme</span>
+                </label>
+                <label class="z-dis:flex z-flex-al:center z-cursor:poi z-mar-t:20 z-gap:20 z-gap:30">
+                    <span class="zln-toggle toggle-theme:warning">
+                        <input type="checkbox" checked>
+                        <span class="zln-toggle-state"></span>
+                        <span class="zln-toggle-btn"></span>
+                    </span>
+                    <span class="z-font-s:15">Warning toggle theme</span>
+                </label>
+                <label class="z-dis:flex z-flex-al:center z-cursor:poi z-mar-t:20 z-gap:20 z-gap:30">
+                    <span class="zln-toggle toggle-theme:info">
+                        <input type="checkbox" checked>
+                        <span class="zln-toggle-state"></span>
+                        <span class="zln-toggle-btn"></span>
+                    </span>
+                    <span class="z-font-s:15">Info toggle theme</span>
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="zln-title z-font-s:18 z-font-w:500">Toggle with text</div>
+            <div class="z-dis:flex z-flex-al:center z-bor:1 z-bor-style:solid z-bor-c:grey4 z-pad-tb:20 z-pad-lr:15 z-bor-radius:5 z-mar-t:10 z-gap:15">
+                <label class="zln-toggle zln-toggle:text">
+                    <input type="checkbox">
+                    <span on-data="ON" off-data="OFF" class="zln-toggle-state"></span>
+                    <span class="zln-toggle-btn"></span>
+                </label>
+                <label class="zln-toggle zln-toggle:text">
+                    <input type="checkbox">
+                    <span on-data="Toggle Switched" off-data="Toggle Unswitched" class="zln-toggle-state"></span>
+                    <span class="zln-toggle-btn"></span>
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="zln-title z-font-s:18 z-font-w:500">Toggles with different sizes</div>
+            <div class="z-dis:flex z-flex-al:center z-gap:15 z-bor:1 z-bor-style:solid z-bor-c:grey4 z-pad-tb:20 z-pad-lr:15 z-bor-radius:5 z-mar-t:10">
+                <label class="zln-toggle">
+                    <input type="checkbox">
+                    <span class="zln-toggle-state"></span>
+                    <span class="zln-toggle-btn"></span>
+                </label>
+                <label class="zln-toggle zln-toggle:small">
+                    <input type="checkbox">
+                    <span class="zln-toggle-state"></span>
+                    <span class="zln-toggle-btn"></span>
+                </label>
+                <label class="zln-toggle zln-toggle:medium">
+                    <input type="checkbox">
+                    <span class="zln-toggle-state"></span>
+                    <span class="zln-toggle-btn"></span>
+                </label>
+                <label class="zln-toggle zln-toggle:large">
+                    <input type="checkbox">
+                    <span class="zln-toggle-state"></span>
+                    <span class="zln-toggle-btn"></span>
+                </label>
+            </div>
+            <div class="z-dis:flex z-flex-al:center z-gap:15 z-bor:1 z-bor-style:solid z-bor-c:grey4 z-pad-tb:20 z-pad-lr:15 z-bor-radius:5 z-mar-t:10">
+                <label class="zln-toggle zln-toggle:outline">
+                    <input type="checkbox">
+                    <span class="zln-toggle-state"></span>
+                    <span class="zln-toggle-btn"></span>
+                </label>
+                <label class="zln-toggle zln-toggle:small zln-toggle:outline">
+                    <input type="checkbox">
+                    <span class="zln-toggle-state"></span>
+                    <span class="zln-toggle-btn"></span>
+                </label>
+                <label class="zln-toggle zln-toggle:medium zln-toggle:outline">
+                    <input type="checkbox">
+                    <span class="zln-toggle-state"></span>
+                    <span class="zln-toggle-btn"></span>
+                </label>
+                <label class="zln-toggle zln-toggle:large zln-toggle:outline">
+                    <input type="checkbox">
+                    <span class="zln-toggle-state"></span>
+                    <span class="zln-toggle-btn"></span>
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="zln-title z-font-s:18 z-font-w:500">Toggle with text</div>
+            <div class="z-dis:flex z-flex-al:center z-bor:1 z-bor-style:solid z-bor-c:grey4 z-pad-tb:20 z-pad-lr:15 z-bor-radius:5 z-mar-t:10 z-gap:15">
+                <label class="zln-toggle zln-toggle:text">
+                    <input type="checkbox">
+                    <span on-data="ON" off-data="OFF" class="zln-toggle-state"></span>
+                    <span class="zln-toggle-btn"></span>
+                </label>
+                <label class="zln-toggle zln-toggle:text zln-toggle:small">
+                    <input type="checkbox">
+                    <span on-data="ON" off-data="OFF" class="zln-toggle-state"></span>
+                    <span class="zln-toggle-btn"></span>
+                </label>
+                <label class="zln-toggle zln-toggle:text zln-toggle:medium">
+                    <input type="checkbox">
+                    <span on-data="ON" off-data="OFF" class="zln-toggle-state"></span>
+                    <span class="zln-toggle-btn"></span>
+                </label>
+                <label class="zln-toggle zln-toggle:text zln-toggle:large">
+                    <input type="checkbox">
+                    <span on-data="ON" off-data="OFF" class="zln-toggle-state"></span>
+                    <span class="zln-toggle-btn"></span>
+                </label>
+            </div>
+            <div class="z-dis:flex z-flex-al:center z-bor:1 z-bor-style:solid z-bor-c:grey4 z-pad-tb:20 z-pad-lr:15 z-bor-radius:5 z-mar-t:10 z-gap:15">
+                <label class="zln-toggle zln-toggle:text zln-toggle:outline">
+                    <input type="checkbox">
+                    <span on-data="ON" off-data="OFF" class="zln-toggle-state"></span>
+                    <span class="zln-toggle-btn"></span>
+                </label>
+                <label class="zln-toggle zln-toggle:text zln-toggle:small zln-toggle:outline">
+                    <input type="checkbox">
+                    <span on-data="ON" off-data="OFF" class="zln-toggle-state"></span>
+                    <span class="zln-toggle-btn"></span>
+                </label>
+                <label class="zln-toggle zln-toggle:text zln-toggle:medium zln-toggle:outline">
+                    <input type="checkbox">
+                    <span on-data="ON" off-data="OFF" class="zln-toggle-state"></span>
+                    <span class="zln-toggle-btn"></span>
+                </label>
+                <label class="zln-toggle zln-toggle:text zln-toggle:large zln-toggle:outline">
+                    <input type="checkbox">
+                    <span on-data="ON" off-data="OFF" class="zln-toggle-state"></span>
+                    <span class="zln-toggle-btn"></span>
+                </label>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

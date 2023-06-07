@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="reset:ul z-list-gap:25">
+        <div class="zln-component">
+            <div class="zln-title z-font-s:18 z-font-w:500">Default popover</div>
+            <div class="z-bor:1 z-bor-style:solid z-bor-c:grey4 z-pad-tb:20 z-pad-lr:15 z-bor-radius:5 z-mar-t:10">
+                <div class="zln-popover-container">
+                    <button class="z-btn">Default popover</button>
+                    <div class="zln-popover zln-popover:bottom zln-arrow zln-arrow:tl">
+                        <div class="zln-title z-pad:12 z-bor-b:1 z-bor-style:solid z-bor-c:grey5">Popover title</div>
+                        <span class="zln-meta-data z-pad-tb:10 z-pad-lr:12">And here's some amazing content. It's very engaging. Right?</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="zln-component">
+            <div class="zln-title z-font-s:18 z-font-w:500">Popover with user profile</div>
+            <div class="z-bor:1 z-bor-style:solid z-bor-c:grey4 z-pad-tb:20 z-pad-lr:15 z-bor-radius:5 z-mar-t:10">
+                <div class="zln-popover-container">
+                    <button class="z-btn">User profile</button>
+                    <div class="zln-popover zln-popover:bottom zln-arrow zln-arrow:tl z-pad:15">
+                        <div class="zln-header z-dis:flex-al-c z-flex-j:sb">
+                            <img src="../images/profile1.jpg" alt="avatar" width="56" height="56" class="zln-rounded zln-rounded:40"/>
+                            <button class="z-btn">Follow</button>
+                        </div>
+                        <div class="zln-metadata z-pad-t:10">
+                            <div class="zln-data-title z-font-w:700 z-font-s:14">Jain sofiya</div>
+                            <a href="#" class="zln-mention z-font-s:13 z-txt:grey2 z-dis:block z-pad-t:5">@jainsofiya</a>
+                        </div>
+                        <div class="z-font-s:14 z-pad-t:13 z-line-h:22">
+                            <span class="z-txt:grey2">Open-source contributor. Building</span>
+                            <a href="#" class="z-link">flowbit.com.</a>
+                        </div>
+                        <div class="z-dis:flex z-gap:15 z-pad-t:13 z-font-s:14">
+                            <div class="zln-metadata z-dis:flex z-gap:5">
+                                <div class="zln-count z-font-w:700">799</div>
+                                <span class="z-txt:grey2">Following</span>
+                            </div>
+                            <div class="zln-metadata z-dis:flex z-gap:5">
+                                <div class="zln-count z-font-w:700">3,758</div>
+                                <span class="z-txt:grey2">Following</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="zln-component">
+            <div class="zln-title z-font-s:18 z-font-w:500">Popover with progress</div>
+            <div class="z-bor:1 z-bor-style:solid z-bor-c:grey4 z-pad-tb:20 z-pad-lr:15 z-bor-radius:5 z-mar-t:10">
+                <div class="zln-popover-container">
+                    <button class="z-btn z-gap:6">
+                        <svg viewBox="0 0 24 24" class="z-ico f-ico-circle-stack" width="16" height="16">
+                            <use xlink:href="#f-ico-circle-stack"></use>
+                        </svg>
+                        <span>User profile</span>
+                    </button>
+                    <div class="zln-popover zln-popover:bottom zln-arrow zln-arrow:tl z-pad:15">
+                        <div class="zln-title">Available storage</div>
+                        <div class="zln-meta-data z-font-s:14 z-pad-t:12">This server has <b>30</b> of <b>50GB</b> of block storage remaining.</div>
+                        <div class="zln-progress:fg zln-type:line z-mar-t:12">
+                            <div class="zln-progress:bg z-pad:6" style="width:80%;"></div>
+                        </div>
+                        <a href="#" class="z-link z-dis:flex-al-c z-pad-t:12 z-gap:5">
+                            <span>Upgrade now</span>
+                            <svg viewBox="0 0 24 24" class="z-ico o-ico-chevron-right" width="14" height="14">
+                                <use xlink:href="#o-ico-chevron-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

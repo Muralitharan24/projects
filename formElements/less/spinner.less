@@ -1,0 +1,52 @@
+:where(.@{pre}-spinner),:where(.@{pre}-type\:circle){
+    stroke-width:2;
+    
+    .@{pre}-progress\:fg{
+        stroke:@grey-ico5;
+    }
+    .@{pre}-progress\:bg{
+        stroke:@accentcolor-dark1;
+        stroke-linecap:round;
+        transform:rotate(-90deg);
+        transform-origin:center;
+        animation:spinner 1s linear infinite;
+    }
+
+}
+:where(.@{z}-btn){
+    .@{pre}-spinner{
+        .@{pre}-progress\:fg{
+            stroke:@grey-ico4;
+        }
+        .@{pre}-progress\:bg{
+            stroke:@white-ico1;
+        }
+    }
+    &.@{z}-btn\:outline{
+        .@{pre}-spinner{
+            .@{pre}-progress\:fg{
+                stroke:@grey-ico5;
+            }
+            .@{pre}-progress\:bg{
+                stroke:@accentcolor-dark1;
+            }
+        }
+    }
+}
+.@{pre}-stop-animation{
+    animation:none;
+}
+[load-data="true"]{
+    .@{pre}-progress\:bg{
+        animation:load 3s linear;
+    }
+}
+.@{pre}-tickmark{
+    .@{pre}-checkmark{
+        stroke:@accentcolor;
+        transform: rotate(-43deg);
+        transform-origin: center;
+        stroke-linecap: round;
+        animation:checkmark .5s linear;
+    }
+}

@@ -1,0 +1,138 @@
+.@{pre}-alert{
+    display:flex;
+    align-items:center;
+    padding:15px;
+    border-radius:4px;
+    gap:15px;
+    
+    .@{z}-ico{
+        align-self:flex-start;
+    }
+
+    .@{pre}-alert-content{
+        display:inline-flex;
+        flex-direction:column;
+        gap:5px;
+
+        .@{pre}-alert-title{
+            font-weight:@z-font-w500;
+            font-size:@z-font-s15;
+        }
+        .@{pre}-btn-container{
+            display:inline-flex;
+            gap:15px;
+            padding-top:10px;
+        }
+    }
+
+    &.@{z}-type{
+        &\:warning{
+            &{
+                @yellow-l-bg:93%;
+    
+                background-color:@yellow-bg;
+                border-color:@yellow-bor;
+                color:@yellow-txt;
+            }
+            
+            .@{z}-ico{
+                fill:@yellow-ico;
+                stroke:@yellow-ico;
+            }
+    
+            .@{z}-link{
+                color:inherit;
+            }
+
+            .@{pre}-item\[hover\]{
+                &:hover{
+                    &::before{
+                        @yellow-l-bg:33%;
+    
+                        background-color:@yellow-bg;
+                    }
+                }
+            }
+        }
+
+        &\:error{
+            &{
+                background-color:@red-bg;
+                border-color:@red-bor;
+                color:@red-txt;
+            }
+            .@{z}-ico{
+                fill:@red-ico;
+                stroke:@red-ico;
+            }
+
+            .@{z}-link{
+                color:inherit;
+            }
+
+            .@{pre}-item\[hover\]{
+                &:hover{
+                    &::before{
+                        @red-l-bg:50%;
+
+                        background-color:@red-bg;
+                    }
+                }
+            }
+        }
+
+        &\:success{
+            &{
+                background-color:@green-bg;
+                border-color:@green-bor;
+                color:@green-txt;
+            }
+
+            .@{z}-ico{
+                fill:@green-ico;
+                stroke:@green-ico;
+            }
+    
+            .@{z}-link{
+                 color:inherit;
+            }
+
+            .@{pre}-item\[hover\]{
+                &:hover{
+                    &::before{
+                        @green-l-bg:34%;
+
+                        background-color:@green-bg;
+                    }
+                }
+            }
+        }
+
+        &\:info{
+            &{
+                background-color:@blue-bg;
+                border-color:@blue-bor;
+                color:@blue-txt;
+            }
+
+            .@{z}-ico{
+                fill:@blue-ico;
+                stroke:@blue-ico;
+            }
+    
+            .@{z}-link{
+                color:inherit;
+            }
+
+            .@{pre}-item\[hover\]{
+                &:hover{
+                    &::before{
+                        @blue-l-bg:50%;
+
+                        background-color:@blue-bg;
+                    }
+                }
+            }
+        }       
+    }
+}

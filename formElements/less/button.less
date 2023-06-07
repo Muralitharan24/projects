@@ -1,0 +1,135 @@
+@import "master.less";
+
+/*---- button style ----*/
+.@{z}-btn{
+    display: flex;
+    cursor: pointer;
+    padding:6px 12px;
+    border-radius: 3px;
+    border:1px solid @accentcolor;
+    color:@white-txt1;
+    align-items: center;
+    justify-content:center;
+    background-color: @accent-theme;
+    font-weight:@z-font-w500;
+    font-size:@z-font-s13;
+    
+    &:hover{
+        background-color: @accentcolor-dark1;
+    }
+    .@{z}-ico{
+        stroke:@white-ico1;
+        fill:@white-ico1;
+    }
+    
+    &.@{z}-btn\:outline{
+        color:@accentcolor;
+        font-weight:@z-font-w500;
+        background-color: transparent;
+    
+        &:hover{
+            background-color: @accentcolor-light2;
+        }
+        .@{z}-ico{
+            stroke:@accentcolor;
+        }
+    }
+
+    &.@{z}-btn\:secondary{
+        --accent-l:95%;
+        color:@accentcolor;
+        border: none;
+    
+        &:hover{
+            background-color: @accentcolor-light1;
+        }
+        .@{z}-ico{
+            stroke:@accentcolor;
+        }
+    }
+
+    &.@{pre}-btn-bg\:trans{
+        background-color:transparent;
+        border-color:transparent;
+        color:@grey-txt2;
+        
+        &:hover{
+            background-color:@grey-bg6;
+            color:@grey-txt0
+        }
+    }
+
+    &:disabled{
+        background-color: @grey-bg6;
+        color:@grey3;
+        cursor: default;
+        border-color:@grey-bg6;
+        
+        & .@{z}-ico{
+            stroke:@grey-txt3;
+        }
+        &:hover{
+            background-color: @grey-bg6;
+        }
+    }
+}
+
+.@{z}-btn\:dual{
+    display:flex;
+
+    .@{z}-btn{
+        &:first-child{
+            border-top-right-radius:0;
+            border-bottom-right-radius:0;
+            border-right:none;
+        }
+        &:last-child{
+            border-top-left-radius:0;
+            border-bottom-left-radius:0;
+        }
+    }
+
+    &.@{z}-type\:fill{
+        .@{z}-btn{
+            &:last-child{
+                border-left-color:hsla(0%,0%,100%,0.22);
+            }
+        }
+    }
+
+    &.@{z}-type\:outline{
+        & .@{z}-btn{
+            color:@accentcolor;
+            font-weight:@z-font-w500;
+            background-color: transparent;    
+            
+            &:last-child{
+                border-left:1px solid @accentcolor;
+            }
+            &:hover{
+                background-color: @accentcolor-light2;
+            }
+            .@{z}-ico{
+                stroke:@accentcolor;
+            }
+        }
+    }
+    
+    &.@{z}-type\:disabled{
+        .@{z}-btn{
+            background-color: @grey-bg6;
+            color:@grey3;
+            cursor: default;
+            border-color:@grey-bg6;
+    
+            &:last-child{
+                border-left-color: @grey-bor4;
+            }
+        }
+        & .@{z}-ico{
+            stroke:@grey-bg3;
+        }
+    }
+}
+
+/*---- button style ----*/

@@ -1,0 +1,142 @@
+:where(.@{pre}-tab){
+    display:flex;
+    gap:10px;
+    box-shadow: 0px -2px 0px 0px @grey-bor4 inset;
+
+    > *{
+        a{
+            display:flex;
+            padding:12px 18px;
+            font-weight:@z-font-w500;
+            color:@grey-txt2;
+            align-items:center;
+            gap:6px;
+            border-top-left-radius:5px;
+            border-top-right-radius:5px;
+        }
+    }
+    .@{pre}-active{
+        a{
+            color:@accentcolor;
+
+            .@{z}-ico{
+                fill:@accentcolor;
+                stroke:@accentcolor;
+            }
+        }
+    }
+    &.@{z}-type\:bg{
+        > *{
+            padding-bottom:2px;
+
+            a{
+                &:hover{
+                    background-color:@grey-bg7;
+                    color:@grey-txt0;
+
+                    .@{z}-ico{
+                        fill:@grey-ico0;
+                        stroke:@grey-ico0;
+                    }
+                }
+            }
+        }
+        .@{pre}-active{
+            a{
+                background-color:@grey-bg7;
+                color:@accentcolor;
+
+                .@{z}-ico{
+                    fill:@accentcolor;
+                    stroke:@accentcolor;
+                }
+            }
+        }
+    }
+    &.@{z}-type\:bor{
+        > *{
+            position: relative;
+
+            a{
+                border:2px solid transparent;
+                border-bottom:none;
+
+                &:hover{
+                    color:@grey-txt0;
+
+                    .@{z}-ico{
+                        fill:@grey-ico0;
+                        stroke:@grey-ico0;
+                    }
+                }
+            }
+        }
+        .@{pre}-active{
+            a{
+                background-color:@grey-bg10;
+                border-color:@grey-bor4;
+                color:@accentcolor;
+
+                .@{z}-ico{
+                    fill:@accentcolor;
+                    stroke:@accentcolor;
+                }
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                left: -10px;
+                bottom: 0;
+                border-right: 2px solid @grey-bor4;
+                border-bottom: 2px solid @grey-bor4;
+                border-bottom-right-radius: 8px;
+                box-shadow: 0px 6px 0px 0px @grey-bor10;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                padding: 4px 5px;
+                right: -10px;
+                bottom: 0;
+                border-left: 2px solid @grey-bor4;
+                border-bottom: 2px solid @grey-bor4;
+                border-bottom-left-radius: 7px;
+                box-shadow: 0px 6px 0px 0px @grey-bor10;
+            }
+        }
+    }
+    &.@{z}-type\:bor-b{
+        gap:20px;
+
+        > *{
+            a{
+                border-bottom:2px solid transparent;
+                padding-left:0;
+                padding-right:0;
+
+                &:hover{
+                    border-color:@grey-bg3;
+                    color:@grey-txt0;
+
+                    .@{z}-ico{
+                        fill:@grey-ico0;
+                        stroke:@grey-ico0;
+                    }
+                }
+            }
+        }
+        .@{pre}-active{
+            a{
+                border-color:@accentcolor;
+                color:@accentcolor;
+
+                .@{z}-ico{
+                    fill:@accentcolor;
+                    stroke:@accentcolor;
+                }
+            }
+        }
+    }
+}
